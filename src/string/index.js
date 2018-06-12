@@ -1,0 +1,3 @@
+var trim = function (val) {
+  
+}
