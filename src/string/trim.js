@@ -1,5 +1,6 @@
 import {
-  isString
+  isString,
+  isNumber
 } from '../type/index'
 var validType = function (val) {
   if (isString(val)) {
@@ -9,7 +10,7 @@ var validType = function (val) {
     return false
   }
 }
-var trim = function (val) {
+var strTrim = function (val) {
   if (validType(val)) {
     return val.trim()
   } else {
@@ -17,7 +18,7 @@ var trim = function (val) {
   }
 }
 
-var trimStart = function (val) {
+var strTrimStart = function (val) {
   if (validType(val)) {
     return val.trimStart()
   } else {
@@ -25,7 +26,7 @@ var trimStart = function (val) {
   }
 }
 
-var trimEnd = function (val) {
+var strTrimEnd = function (val) {
   if (validType(val)) {
     return val.trimEnd()
   } else {
@@ -33,12 +34,8 @@ var trimEnd = function (val) {
   }
 }
 
-var replace = function (val) {
-  
-}
-
 export {
-  trim,
-  trimStart,
-  trimEnd
+  strTrim,
+  strTrimStart,
+  strTrimEnd
 }
